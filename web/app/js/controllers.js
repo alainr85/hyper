@@ -7,9 +7,10 @@ hyperApp.controller('MatplotController',function($scope, socket) {
 
     // Load the classic theme
     Galleria.loadTheme('lib/galleria/galleria.classic.js');
-
     // Initialize Galleria
-    Galleria.run('#galleria');
+    Galleria.run('#galleria', { transition: 'fade',
+                                showInfo: false,
+                                imageMargin: 0 });
 
     socket.on('matplot', function(data) {
         console.log(data);
