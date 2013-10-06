@@ -1,6 +1,7 @@
 body {
-    color: #333;
+    color: #d3d7de;
     background-color: #4c5566;
+    font-family: "Open Sans";
 }
 a {
     text-decoration: none;
@@ -23,20 +24,33 @@ a {
 #nav {
     margin-left:-150px;
     width:150px;
-    background-color: #343843;
+    background-color: #3d4452;
     text-align: center;
     min-height: 800px;
 }
 
 #nav .brand {
-    color:#fff;
+    color:#d3d7de;
     margin:0px;
-    padding: 10px 0px 14px 0px;
-    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+    padding: 10px 0px;
+    font-weight: lighter;
+    font-size: 25px;
+    line-height: 30px;
 }
 
-.nav-inner {
-    border-top: 1px solid rgba(0,0,0,0.05) !important;
+.nav-inner ul {
+    background-color: #4c5566;
+}
+
+.nav-inner ul li a { border-top: 1px solid #54666d;
+                     border-bottom: 1px solid #485161;
+                     color: #a7afbd !important;
+                     background-color: #4c5566 !important;
+                     padding: 10px 20px;
+}
+.nav-header {
+    background-color: #5c677c;
+    padding:10px;
 }
 
 /* Vertical Navigation Styles */
@@ -45,13 +59,12 @@ a {
     border: none;
     text-align: left;
 }
-    #nav .pure-menu a:hover,
     #nav .pure-menu a:focus {
         background-color: #7d869b;
     }
     #nav .pure-menu a {
-        color: #fff;
-        margin-left: 0.5em;
+        color: #d3d7de;
+        background-color: rgba(0,0,0,0.3);
     }
     #nav .pure-menu-heading {
         border-bottom: none;
@@ -66,5 +79,13 @@ a {
     .nav-count {
         color: rgb(75, 113, 151);
     }
+
+/* BREADCRUMBS */
+.content-header { background-color:#dde2ee; }
+.content-header-breadcrumb { margin:0px;
+                             color: #717171;
+                             font-size: 13px;
+                             padding: 17px; }
+
 /* MATPLOT CSS */
 #galleria { height:640px; width:100%; }
