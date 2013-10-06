@@ -1,6 +1,6 @@
 body {
     color: #333;
-
+    background-color: #4c5566;
 }
 a {
     text-decoration: none;
@@ -9,7 +9,7 @@ a {
 
 /* LAYOUT CSS */
 #layout {
-    padding-left:500px; /* "left col (nav + list)" width */
+    padding-left:150px; /* "left col (nav + list)" width */
     position: relative;
 }
 
@@ -21,14 +21,23 @@ a {
 }
 
 #nav {
-    margin-left:-500px; /* "left col (nav + list)" width */
+    margin-left:-150px;
     width:150px;
     background-color: #343843;
     text-align: center;
     min-height: 800px;
 }
 
-#nav .brand { color:#fff; }
+#nav .brand {
+    color:#fff;
+    margin:0px;
+    padding: 10px 0px 14px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.nav-inner {
+    border-top: 1px solid rgba(0,0,0,0.05) !important;
+}
 
 /* Vertical Navigation Styles */
 #nav .pure-menu {
@@ -57,9 +66,5 @@ a {
     .nav-count {
         color: rgb(75, 113, 151);
     }
-
-
-
-
-
-
+/* MATPLOT CSS */
+#galleria { height:640px; width:100%; }

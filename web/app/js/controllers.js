@@ -2,16 +2,19 @@
 
 hyperApp.controller('MatplotController',function($scope, socket) {
 
-  socket.on('init', function (data) {
-
-    console.log(data);
-  });
-
   init();
   function init(){
-    socket.on('matplot', function(data){
+
+    // Load the classic theme
+    Galleria.loadTheme('lib/galleria/galleria.classic.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+    socket.on('matplot', function(data) {
         console.log(data);
     });
+
     socket.emit('subscribe', {event_name:'matplot'});
   }
 
