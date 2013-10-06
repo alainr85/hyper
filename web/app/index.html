@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="hyperApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper</title>
+    <link rel="stylesheet" href="css/vendor/pure/pure-min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="pure-g-r content" id="layout">
+    <div class="pure-u" id="nav">
+        <a href="#" class="nav-menu-button">Menu</a>
+
+        <h2 class="brand">Hyper</h2>
+
+        <div class="nav-inner">
+            <div class="pure-menu pure-menu-open">
+                <ul>
+                    <li><a href="#/matplot">matplot <span class="nav-count">(2)</span></a></li>
+                    <li><a href="#/graph">graph</a></li>
+                    <li><a href="#">maps</a></li>
+
+                    <!--
+                    <li class="pure-menu-heading">Labels</li>
+                    <li><a href="#"><span class="email-label-personal"></span>Personal</a></li>
+                    <li><a href="#"><span class="email-label-work"></span>Work</a></li>
+                    <li><a href="#"><span class="email-label-travel"></span>Travel</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pure-u-1" id="main">
+        <div style="border:1px solid;" ng-view></div>
+    </div>
+</div>
+
+  <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/factories.js"></script>
+
+</body>
+</html>
