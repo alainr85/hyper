@@ -1,7 +1,8 @@
 'use strict';
 
+/*
 hyperApp.factory('socket', function ($rootScope) {
-  var socket = io.connect('http://localhost:8080/');
+  var socket = io.connect('http://hypergate.alainrichardt.info:8080/');
   return {
     on: function (eventName, callback) {
       socket.on(eventName, function () {
@@ -23,3 +24,4 @@ hyperApp.factory('socket', function ($rootScope) {
     }
   };
 });
+*/
